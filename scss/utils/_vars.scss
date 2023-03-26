@@ -1,0 +1,22 @@
+$colors: (
+  "background": #fff,
+
+  "txt-white": #fcfcfc,
+  "txt-black": #111827,
+  "txt-grey": #374151,
+
+  "accent": #5e3bee,
+
+  "footer-background": #000,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1216px;

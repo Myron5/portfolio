@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+        <symbol id="arrow-circle-down" viewBox="0 0 32 32" fill='none'>
+            <path stroke="inherit" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                stroke-width="1.5"
+                d="M16 29.333c7.364 0 13.333-5.97 13.333-13.333 0-7.364-5.97-13.333-13.333-13.333C8.636 2.667 2.667 8.637 2.667 16c0 7.364 5.97 13.333 13.333 13.333Z" />
+            <path stroke="inherit" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M11.293 14.32 16 19.013l4.707-4.693" />
+        </symbol>
+
+
+        <!-- Тут знаходяться background css svg-sprite -->
+        <style>
+            .img {
+                display: none;
+            }
+
+            .img:target {
+                display: inline;
+            }
+        </style>
+
+    </defs>
+    <g id="close" class="img" viewBox="0 0 32 32" fill="#111827">
+        <path
+            d="M23.733 10.304 22.229 8.8l-5.963 5.963L10.303 8.8l-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z" />
+    </g>
+
+    <g id="burger" class="img" viewBox="0 0 32 32" fill="#111827">
+        <path d="M6.4 11.733V9.6h19.2v2.133H6.4zm0 5.334h19.2v-2.133H6.4v2.133zm0 5.333h19.2v-2.133H6.4V22.4z" />
+    </g>
+</svg>

@@ -1,0 +1,75 @@
+.stack {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include tablet() {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include mobile() {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  &__title {
+    @include fonts(48px, 42px, 36px);
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    color: getColor(txt-black);
+  }
+
+  &__list {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__link {
+    @include flex($jc: space-between);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item {
+    @include mobile() {
+      @include flexgrid(1, 20px, 60px);
+      padding: 30px;
+    }
+
+    @include mobile(200) {
+      @include flexgrid(2, 20px, 60px);
+      padding: 30px;
+    }
+
+    @include tablet() {
+      @include flexgrid(3, 20px, 60px);
+      padding: 30px;
+    }
+
+    @include desktop() {
+      @include flexgrid(4, 20px, 60px);
+      padding: 30px;
+    }
+
+    @extend %activeEl;
+  }
+
+  &__name {
+    display: inline-block;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    color: getColor(txt-black);
+  }
+
+  &__img {
+    margin-top: 20px;
+  }
+}

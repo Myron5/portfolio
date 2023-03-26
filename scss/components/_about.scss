@@ -1,0 +1,53 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include tablet() {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include mobile() {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  &__container {
+    @include desktop() {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__left-side {
+    max-width: 750px;
+  }
+
+  &__title {
+    @include fonts(48px, 42px, 36px);
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    color: getColor(txt-black);
+  }
+
+  &__txt {
+    margin-top: 50px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: getColor(txt-grey);
+    text-indent: 20px;
+  }
+
+  &__img {
+    @include margin-auto();
+    margin-top: 20px;
+
+    @include desktop() {
+      margin: 0;
+    }
+  }
+}

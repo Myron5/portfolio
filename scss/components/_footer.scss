@@ -1,0 +1,128 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  background-color: #000;
+
+  @include tablet() {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include mobile() {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  &__title {
+    display: inline-block;
+
+    @include fonts(48px, 42px, 36px);
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+    color: getColor(txt-white);
+
+    @extend %activeEl;
+  }
+
+  &__title--lower {
+    display: inline;
+
+    &::after {
+      content: "";
+
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      margin-left: 15px;
+
+      background-image: url(../../images/additional/arrow.png);
+    }
+  }
+
+  &__lower {
+    margin-top: 40px;
+
+    @include desktop() {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 100px;
+    }
+  }
+
+  &__email {
+    display: inline-block;
+    max-width: 100%;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: getColor(txt-white);
+
+    @extend %activeEl;
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    @include tablet() {
+      justify-content: center;
+
+      max-width: 100%;
+      gap: 150px;
+      row-gap: 40px;
+      text-align: center;
+    }
+
+    @include desktop() {
+      margin: 0;
+      max-width: 400px;
+    }
+  }
+
+  &__social-item {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: getColor(txt-white);
+
+    @extend %activeEl;
+
+    &::before {
+      content: "";
+
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+    }
+
+    &:nth-child(1) {
+      &::before {
+        background-image: url(../../images/additional/linkedin.png);
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-image: url(../../images/additional/telegram.png);
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        background-image: url(../../images/additional/github.png);
+      }
+    }
+  }
+}

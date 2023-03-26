@@ -1,0 +1,89 @@
+// Міксін створений для центрвання блоку
+@mixin margin-auto() {
+  margin: 0 auto;
+}
+
+// Міксін створений для центрвання блоку
+@mixin flexgrid($rowcount: 3, $gap: 32px, $padding: 0px) {
+  flex-basis: calc(
+    (100% - ($rowcount - 1) * $gap - ($rowcount) * $padding) / $rowcount
+  );
+}
+
+// Міксін створений для центрування
+@mixin flex($ai: center, $jc: center, $gap: 32px, $fd: row) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $gap;
+  flex-direction: $fd;
+}
+
+/**
+  |=======================================================================================================
+  | Головний міксін
+  |=======================================================================================================
+*/
+
+// Міксіни на різні прилади
+@mixin mobile($additional: 0px) {
+  @media screen and (min-width: ($mobile + $additional)) {
+    @content;
+  }
+}
+
+@mixin tablet($additional: 0px) {
+  @media screen and (min-width: ($tablet+ $additional)) {
+    @content;
+  }
+}
+
+@mixin desktop($additional: 0px) {
+  @media screen and (min-width: ($desktop + $additional)) {
+    @content;
+  }
+}
+
+// -----------------------------------------------------------------------------------------------------
+
+// Міксін на aдаптивні шрифти
+@mixin fonts($descSize, $tablSize, $mobSize) {
+  @include mobile() {
+    font-size: $mobSize;
+  }
+
+  @include tablet() {
+    font-size: $tablSize;
+  }
+
+  @include desktop() {
+    font-size: $descSize;
+  }
+}
+
+//  Ретінізоване зображення
+@mixin isRetinaDisplay() {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+//  Неретінізоване зображення
+@mixin isNotRetinaDisplay() {
+  @media (max-device-pixel-ratio: 1),
+    (min-resolution: 96dpi),
+    (min-resolution: 1dppx) {
+    @content;
+  }
+}
+
+// Міксін для svg на батоні
+@mixin buttonIcon($path, $size) {
+  background-color: transparent;
+  background-image: url($path);
+  background-size: $size $size;
+  background-position: center;
+  background-repeat: no-repeat;
+}

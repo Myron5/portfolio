@@ -1,0 +1,12 @@
+@import "./utils/_normalize.scss";
+@import "./utils/_reset.scss";
+@import "./utils/_vars.scss";
+@import "./utils/_mixins.scss";
+@import "./utils/base";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/works";
+@import "./components/stack";
+@import "./components/about";
+@import "./components/footer";

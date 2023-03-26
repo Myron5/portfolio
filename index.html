@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/additional/favicon.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="" class="nav__logo-link">
+            <p class="nav__logo">
+              Myron <span class="nav__logo--color">Melnyk</span>
+            </p>
+          </a>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#works">Works</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#stack">Stack</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#about">About</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#footer">Contacts</a>
+            </li>
+          </ul>
+          <button class="nav__burger-btn js-burger-open" type="button"></button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__background">
+          <div class="container">
+            <div class="hero__box">
+              <p class="hero__txt">Hello, I am Myron 👋</p>
+              <h1 class="hero__title">
+                Recently, I started creating my own projects
+              </h1>
+              <a class="hero__link" rel="stylesheet" href="#footer"
+                >Contact with me</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <a class="hero__down__box" href="#footer">
+            <span class="hero__down-line hero__down-line--left"></span>
+
+            <button class="hero__down-btn js-hero-downBtn" type="button">
+              <svg class="hero__down-icon">
+                <use
+                  href="./images/additional/sprite.svg#arrow-circle-down"
+                ></use>
+              </svg>
+            </button>
+
+            <span class="hero__down-line hero__down-line--right"></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="container">
+          <h2 class="works__title">My works</h2>
+          <ul class="works__list">
+            <li class="works__item works__item--link">
+              <a
+                class="works__link works__link--git"
+                href="https://github.com/Myron5"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                Visit my GitHub <span class="works__link--git-icon"></span>
+              </a>
+            </li>
+
+            <li class="works__item">
+              <img
+                class="works__img"
+                src="./images/works/item-2.jpg"
+                alt="Web-site about ice cream"
+              />
+              <div class="works__content-box">
+                <h3 class="works__name">Ice cream</h3>
+                <p class="works__txt">
+                  The ice cream company website is a team project featuring a
+                  responsive layout, burger menu, modal window, and stunning
+                  design with beautiful animations. The website provides an
+                  enjoyable user experience for customers and potential
+                  franchisees alike.
+                </p>
+
+                <a
+                  class="works__link"
+                  href="https://vovakyrylenko.github.io/ice-cream"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  Visit project
+                </a>
+              </div>
+            </li>
+
+            <li class="works__item">
+              <img
+                class="works__img"
+                src="./images/works/item-3.jpg"
+                alt="Web-site about films"
+              />
+              <div class="works__content-box">
+                <h3 class="works__name">Filmoteka</h3>
+                <p class="works__txt">
+                  The movie selection website allows users to search for films,
+                  watch trailers, and save their favorites in the firebase
+                  database. With an extensive database of movies and
+                  user-friendly interface, the site provides an engaging
+                  experience for movie lovers. Whether you're looking for the
+                  latest blockbusters or timeless classics, this website has got
+                  you covered.
+                </p>
+                <a
+                  class="works__link"
+                  href="https://vovakyrylenko.github.io/filmoteka"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  Visit project
+                </a>
+              </div>
+            </li>
+
+            <li class="works__item">
+              <img
+                class="works__img"
+                src="./images/works/item-4.jpg"
+                alt="Web-site about dishes"
+              />
+              <div class="works__content-box">
+                <h3 class="works__name">Domingo Donut</h3>
+                <p class="works__txt">
+                  A simple site with a vast collection of recipes is a culinary
+                  haven for food enthusiasts. Here, you can log into your
+                  account and explore an array of delicious recipes from around
+                  the world. Save your favorite recipes here and share them with
+                  others . So, get ready to indulge your taste with this
+                  fantastic recipe site.
+                </p>
+                <a
+                  class="works__link"
+                  href="http://domingodonut.zzz.com.ua"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  Visit project
+                </a>
+              </div>
+            </li>
+
+            <li class="works__item">
+              <img
+                class="works__img"
+                src="./images/works/item-1.jpg"
+                alt="Web-site about clinic"
+              />
+              <div class="works__content-box">
+                <h3 class="works__name">Clinic</h3>
+                <p class="works__txt">
+                  The ophthalmology clinic website is a feature-packed platform
+                  that utilizes various APIs, including Google Sheets,
+                  Translate, News, and Reviews, to provide comprehensive
+                  information and services to patients. With the help of
+                  Webpack, the website is easy to develop, maintain, and update,
+                  ensuring a seamless user experience for visitors.
+                </p>
+                <a
+                  class="works__link"
+                  href="http://svitiglad.zzz.com.ua"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  Visit project
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="stack" id="stack">
+        <div class="container">
+          <h2 class="stack__title">My stack of technologies</h2>
+
+          <ul class="stack__list">
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/HTML5"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">HTML</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/html.png"
+                  alt="Hyper Text Markup Language"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/CSS"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">CSS</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/css.png"
+                  alt="Cascading Style Sheets"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/Sass"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">Sass</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/sass.png"
+                  alt="Syntactically Awesome Style Sheets"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/%D0%90%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%B9_%D0%B2%D0%B5%D0%B1%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">Adaptive</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/adapt.png"
+                  alt="Adaptive and responsive design"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/JavaScript"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">JS</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/js.png"
+                  alt="Java Script"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/TypeScript"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">TS</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/ts.png"
+                  alt="Type Script"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/Webpack"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">Webpack</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/webpack.png"
+                  alt="Webpack"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://parceljs.org"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">Parcel</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/parcel.png"
+                  alt="Parcel"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/REST"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">REST API</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/api.png"
+                  alt="Representational State Transfer of Application Programming Interface"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/Git"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">Git</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/git.png"
+                  alt="Git or Github"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/React"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">React</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/react.png"
+                  alt="React"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/React_Native"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">React Native</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/reactNative.png"
+                  alt=" React Native"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/Node.js"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">NodeJS</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/node.png"
+                  alt="NodeJS"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/MongoDB"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">Mongo</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/mongo.png"
+                  alt="Mongo database"
+                />
+              </a>
+            </li>
+            <li class="stack__item">
+              <a
+                class="stack__link"
+                href="https://uk.wikipedia.org/wiki/Firebase"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <h3 class="stack__name">Firebase</h3>
+                <img
+                  class="stack__img"
+                  src="./images/stack/firebase.png"
+                  alt="Firebase database"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about__container">
+          <div class="about__left-side">
+            <h2 class="about__title">About me</h2>
+            <p class="about__txt">
+              As a highly motivated and ambitious computer science student with
+              a strong foundation in JavaScript, I am seeking a full-time web
+              developer position.
+            </p>
+
+            <p class="about__txt">
+              My commitment to practice and teamwork has helped me set and
+              achieve challenging goals. In addition to my technical skills, I
+              possess excellent communication and critical thinking abilities
+              that enable me to effectively collaborate with colleagues and
+              clients. I have ability to solve complex bags and my aptitude for
+              analyzing problems and finding easy ways of solving problem.
+            </p>
+
+            <p class="about__txt">
+              With professional expertise, I provide comprehensive and
+              customized website solutions that meet the unique needs of each
+              client.
+            </p>
+          </div>
+          <img class="about__img" src="./images/about/self.jpg" alt="It's me" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <a
+          href="https://t.me/High_track"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+        >
+          <h2 class="footer__title">
+            Have an idea ?
+            <span class="footer__title--lower decor-line">Let’s talk</span>
+          </h2>
+        </a>
+        <address class="footer__lower">
+          <a href="mailto:melnykmyron1808@gmail.com" class="footer__email"
+            >melnykmyron1808@gmail.com</a
+          >
+
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a
+                href="https://www.linkedin.com/in/myron-melnyk"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://t.me/High_track"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                Telegram
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://github.com/Myron5"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+
+    <nav class="nav-mob visually-hidden js-burger-window">
+      <div class="nav-mob__modal">
+        <ul class="nav-mob__list">
+          <li class="nav-mob__list-item">
+            <a class="nav-mob__list-link" href="#works">Works</a>
+          </li>
+          <li class="nav-mob__list-item">
+            <a class="nav-mob__list-link" href="#stack">Stack</a>
+          </li>
+          <li class="nav-mob__list-item">
+            <a class="nav-mob__list-link" href="#about">About</a>
+          </li>
+          <li class="nav-mob__list-item">
+            <a class="nav-mob__list-link" href="#footer">Contacts</a>
+          </li>
+        </ul>
+        <button class="nav-mob__close-btn js-burger-close" type="button" />
+      </div>
+    </nav>
+
+    <script src="./JS/burger.js"></script>
+  </body>
+</html>

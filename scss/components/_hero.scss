@@ -1,0 +1,116 @@
+.hero {
+  padding-bottom: 50px;
+
+  @include tablet() {
+    padding-bottom: 70px;
+  }
+
+  @include mobile() {
+    padding-bottom: 90px;
+  }
+
+  &__background {
+    background-image: url(../../images/hero/main.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__box {
+    padding-top: 128px;
+    padding-bottom: 64px;
+
+    @include flex($fd: column);
+  }
+
+  &__txt {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 16px;
+    max-width: 1000px;
+
+    @include fonts(72px, 65px, 40px);
+    font-weight: 600;
+    line-height: 90px;
+    letter-spacing: -0.025em;
+    text-align: center;
+  }
+
+  &__link {
+    margin-top: 40px;
+    @extend %activeLink;
+  }
+
+  &__down__box {
+    display: block;
+    @include flex($jc: space-between, $gap: 40px);
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      & .hero__down-icon {
+        stroke: getColor(accent);
+      }
+
+      & .hero__down-line {
+        box-shadow: $box-shadow;
+        opacity: 1;
+        background-color: getColor(accent);
+      }
+    }
+  }
+
+  &__down-line {
+    display: inline-block;
+    flex-grow: 1;
+    height: 2px;
+
+    background: linear-gradient(
+      90deg,
+      #9ca3af 0%,
+      rgba(156, 163, 175, 0) 45.82%,
+      rgba(156, 163, 175, 0) 50%,
+      rgba(156, 163, 175, 0) 54.38%,
+      #9ca3af 100%
+    );
+    background-color: getColor(txt-grey);
+    border-radius: 50% !important;
+    box-shadow: none;
+    opacity: 0.8;
+
+    transition: opacity $animation, box-shadow $animation;
+
+    &--left {
+    }
+
+    &--right {
+    }
+  }
+
+  &__down-btn {
+    display: inline-block;
+
+    width: 32px;
+    height: 32px;
+
+    @include buttonIcon("", 32px);
+  }
+
+  &__down-icon {
+    width: 32px;
+    height: 32px;
+
+    stroke: getColor(txt-grey);
+
+    transition: stroke $animation;
+  }
+}
