@@ -56,7 +56,7 @@
       display: none;
     }
 
-    @include buttonIcon("../../images/additional/sprite.svg#burger", 40px);
+    @include buttonIcon("../images/additional/sprite.svg#burger", 40px);
   }
 }
 
@@ -104,6 +104,6 @@
     left: 100%;
     transform: translate(-100%, -50%);
 
-    @include buttonIcon("../../images/additional/sprite.svg#close", 40px);
+    @include buttonIcon("../images/additional/sprite.svg#close", 40px);
   }
 }

@@ -646,7 +646,7 @@ body {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  background-image: url("../../images/additional/sprite.svg#burger");
+  background-image: url("../images/additional/sprite.svg#burger");
   background-size: 40px 40px;
   background-position: center;
   background-repeat: no-repeat;
@@ -720,7 +720,7 @@ body {
   -webkit-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
   background-color: transparent;
-  background-image: url("../../images/additional/sprite.svg#close");
+  background-image: url("../images/additional/sprite.svg#close");
   background-size: 40px 40px;
   background-position: center;
   background-repeat: no-repeat;
@@ -740,7 +740,7 @@ body {
   }
 }
 .hero__background {
-  background-image: url(../../images/hero/main.jpg);
+  background-image: url(../images/hero/main.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -999,7 +999,7 @@ body {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background-image: url(../../images/additional/github.png);
+  background-image: url(../images/additional/github.png);
 }
 
 .stack {
@@ -1227,7 +1227,7 @@ body {
   width: 34px;
   height: 34px;
   margin-left: 15px;
-  background-image: url(../../images/additional/arrow.png);
+  background-image: url(../images/additional/arrow.png);
 }
 .footer__lower {
   margin-top: 40px;
@@ -1304,11 +1304,11 @@ body {
   height: 28px;
 }
 .footer__social-item:nth-child(1)::before {
-  background-image: url(../../images/additional/linkedin.png);
+  background-image: url(../images/additional/linkedin.png);
 }
 .footer__social-item:nth-child(2)::before {
-  background-image: url(../../images/additional/telegram.png);
+  background-image: url(../images/additional/telegram.png);
 }
 .footer__social-item:nth-child(3)::before {
-  background-image: url(../../images/additional/github.png);
+  background-image: url(../images/additional/github.png);
 }/*# sourceMappingURL=index.css.map */

@@ -37,7 +37,7 @@
       height: 34px;
       margin-left: 15px;
 
-      background-image: url(../../images/additional/arrow.png);
+      background-image: url(../images/additional/arrow.png);
     }
   }
 
@@ -109,19 +109,19 @@
 
     &:nth-child(1) {
       &::before {
-        background-image: url(../../images/additional/linkedin.png);
+        background-image: url(../images/additional/linkedin.png);
       }
     }
 
     &:nth-child(2) {
       &::before {
-        background-image: url(../../images/additional/telegram.png);
+        background-image: url(../images/additional/telegram.png);
       }
     }
 
     &:nth-child(3) {
       &::before {
-        background-image: url(../../images/additional/github.png);
+        background-image: url(../images/additional/github.png);
       }
     }
   }
